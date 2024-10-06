@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Media Oraria con Stanchezza e Pausa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcolatore Media Oraria con Stanchezza e Pausa</h1>
+        <div class="input-section">
+            <label for="totalData">Inserisci il dato iniziale (quantità di lavoro totale):</label>
+            <input type="number" id="totalData" placeholder="Inserisci il dato" min="1">
+            <button onclick="calculate()">Calcola</button>
+        </div>
+
+        <table id="scheduleTable">
+            <thead>
+                <tr>
+                    <th>Ora</th>
+                    <th>Dato Residuo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Le righe verranno generate dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
